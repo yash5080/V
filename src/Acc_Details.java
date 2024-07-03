@@ -170,6 +170,7 @@ public class Acc_Details extends JFrame implements ActionListener, ItemListener 
                     conn.s.executeUpdate(query);
 
                     setVisible(false);
+                    new ATM();
                 } catch (SQLException ep) {
                     ep.printStackTrace();
                     JOptionPane.showMessageDialog(this, "Error connecting to the database", "Error", JOptionPane.ERROR_MESSAGE);
